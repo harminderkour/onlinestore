@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background-color: #f4f4f4;
+        scroll-behavior: smooth;
+      }
+      .header {
+        background-color: #4a90e2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        color: white;
+      }
+      .header a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .header ul {
+        list-style: none;
+        display: flex;
+      }
+      .header li {
+        margin: 0 15px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 50px;
+      }
+      .box {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 20px;
+        text-align: center;
+        width: 350px;
+        margin:25px;
+        transition: transform 0.3s ease;
+      }
+      .box img {
+        width: 100%;
+        border-bottom: 2px solid #ddd;
+      }
+      .box:hover {
+        transform: scale(1.05);
+      }
+      button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #357abd;
+      }
+      .footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <h1>My Store</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="products" class="section">
+        <div class="box">
+          <img src="assets/1.png" />
+          <h3>Coffee Frappuccino</h3>
+          <h4>A rich and creamy blended coffee beverage, perfect for a refreshing treat.</h4>
+          <p>Price: $25</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="box">
+          <img src="assets/2.png" />
+          <h3>Latte</h3>
+          <h4>A smooth and velvety espresso-based drink with steamed milk.</h4>
+          <p>Price: $25</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="box">
+          <img src="assets/3.png" />
+          <h3>Sandwich</h3>
+          <h4>A delicious and freshly made sandwich with quality ingredients.</h4>
+          <p>Price: $25</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="about" class="section" style="background: linear-gradient(to right, #ff9966, #ff5e62);">
+        <img src="assets/5.png" width="400" />
+        <div class="box">
+          <h3>Starbucks Estates blend</h3>
+          <p>Premium quality milk used in all our Starbucks beverages, ensuring rich flavor and creaminess.</p>
+        </div>
+      </div>
+
+      <div id="contact" class="section" style="background: linear-gradient(to right, #36d1dc, #5b86e5);">
+        <div class="box">
+          <h3>Contact us</h3>
+          <p>City Ville, Ontario</p>
+        </div>
+        <!-- <img src="assets/5.png" width="400" /> -->
+      </div>
+
+      <div class="footer">
+        <footer>&copy; 2024 My Store. All rights reserved.</footer>
+      </div>
+    </div>
+  </body>
+</html>
